@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skillgroups",
+  "info": {
+    "singularName": "skillgroup",
+    "pluralName": "skillgroups",
+    "displayName": "Skillgroup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

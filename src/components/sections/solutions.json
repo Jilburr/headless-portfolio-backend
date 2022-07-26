@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_solutions",
+  "info": {
+    "displayName": "usedSolutions",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "solution": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::solution.solution"
+    }
+  }
+}

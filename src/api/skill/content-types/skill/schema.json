@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills",
+  "info": {
+    "singularName": "skill",
+    "pluralName": "skills",
+    "displayName": "Skill",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "percentage": {
+      "type": "integer"
+    },
+    "skillgroup": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::skillgroup.skillgroup"
+    }
+  }
+}
