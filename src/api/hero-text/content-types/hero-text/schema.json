@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_texts",
+  "info": {
+    "singularName": "hero-text",
+    "pluralName": "hero-texts",
+    "displayName": "Hero text",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "text",
+      "default": "[\"Hi there\"], [\"This is an example\"]"
+    }
+  }
+}
