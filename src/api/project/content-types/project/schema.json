@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "summery": {
-      "type": "string"
-    },
     "description": {
       "type": "text"
     },
@@ -43,6 +40,9 @@
     },
     "alternativeText": {
       "type": "string"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

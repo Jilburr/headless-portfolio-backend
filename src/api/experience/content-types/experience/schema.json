@@ -20,6 +20,9 @@
     "text": {
       "type": "text",
       "required": true
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }
