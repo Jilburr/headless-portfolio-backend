@@ -43,6 +43,12 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "WebsiteLink": {
+      "type": "string"
+    },
+    "RepositoryLink": {
+      "type": "string"
     }
   }
 }
