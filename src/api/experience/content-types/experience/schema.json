@@ -17,12 +17,9 @@
       "required": true,
       "default": "From 08/19"
     },
-    "text": {
-      "type": "text",
-      "required": true
-    },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     }
   }
 }
