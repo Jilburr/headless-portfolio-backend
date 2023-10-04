@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "@strapi/plugin-i18n": "4.11.1",
-    "@strapi/plugin-users-permissions": "4.11.1",
+    "@strapi/plugin-i18n": "4.14.2",
+    "@strapi/plugin-users-permissions": "4.14.2",
     "@strapi/provider-upload-cloudinary": "^4.2.3",
-    "@strapi/strapi": "4.11.1",
+    "@strapi/strapi": "4.14.2",
     "better-sqlite3": "7.4.6",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
@@ -16,7 +16,7 @@
   "version": "1.0",
   "description": "Home of Jilbert Ebrahimi",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
