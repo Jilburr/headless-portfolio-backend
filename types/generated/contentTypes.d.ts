@@ -512,6 +512,12 @@ export interface PluginContentReleasesRelease extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     releasedAt: Attribute.DateTime;
+    scheduledAt: Attribute.DateTime;
+    timezone: Attribute.String;
+    status: Attribute.Enumeration<
+      ['ready', 'blocked', 'failed', 'done', 'empty']
+    > &
+      Attribute.Required;
     actions: Attribute.Relation<
       'plugin::content-releases.release',
       'oneToMany',
@@ -566,6 +572,7 @@ export interface PluginContentReleasesReleaseAction
       'manyToOne',
       'plugin::content-releases.release'
     >;
+    isEntryValid: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -831,7 +838,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
   attributes: {
     siteName: Attribute.String & Attribute.Required;
     defaultSeo: Attribute.Component<'shared.seo'> & Attribute.Required;
-    favicon: Attribute.Media;
+    favicon: Attribute.Media<'images' | 'files' | 'videos'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -927,7 +934,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    image: Attribute.Media;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     slug: Attribute.UID<'api::project.project', 'title'>;
     solutions: Attribute.Relation<
       'api::project.project',
@@ -1068,7 +1075,7 @@ export interface ApiSolutionSolution extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
-    image: Attribute.Media;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     alternativeText: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
