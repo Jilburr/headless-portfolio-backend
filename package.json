@@ -1,21 +1,19 @@
 {
   "dependencies": {
-    "@strapi/plugin-i18n": "4.25.3",
-    "@strapi/plugin-users-permissions": "4.25.3",
+    "@strapi/plugin-i18n": "4.14.2",
+    "@strapi/plugin-users-permissions": "4.14.2",
     "@strapi/provider-upload-cloudinary": "^4.2.3",
-    "@strapi/strapi": "4.25.3",
+    "@strapi/strapi": "4.14.2",
+    "better-sqlite3": "7.4.6",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.1"
+    "strapi-plugin-vercel-deploy": "^1.3.1"
   },
   "name": "headless-portfolio-backend",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "Home of Jilbert Ebrahimi",
   "scripts": {
     "dev": "strapi develop",
@@ -31,7 +29,7 @@
     "template": "@strapi/template-blog@1.0.0"
   },
   "engines": {
-    "node": "20.x.x",
+    "node": "18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
